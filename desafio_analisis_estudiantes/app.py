@@ -105,9 +105,12 @@ def cs_body():
 
     # Expander para verificar valores nulos
     with st.expander("Verificar valores nulos"):
+        # Calcular valores nulos por columna
         valores_nulos = df.isnull().sum()
+        valores_nulos.index.name = "Nombre_Columna"  # Renombrar el índice
+        valores_nulos = valores_nulos.rename("Nulos")  # Renombrar la columna de valores nulos
         st.write("Valores nulos por columna:")
-        st.write(valores_nulos)
+        st.dataframe(valores_nulos)
     
     # Subtítulo
     st.subheader("Análisis Exploratorio")
@@ -123,8 +126,9 @@ def cs_body():
     # Expander para el promedio por asignatura
     with st.expander('Promedio por asignatura'):
         promedio_asignaturas = df[['Nota_Matemáticas', 'Nota_Lenguaje', 'Nota_Ciencias']].mean()
+        promedio_asignaturas = promedio_asignaturas.rename("Promedio")  # Renombrar la columna de valores nulos
         st.write("Promedio por asignatura:")
-        st.write(promedio_asignaturas)
+        st.dataframe(promedio_asignaturas)
 
     # Expander para el promedio por estudiante
     with st.expander('Promedio por estudiante'):
@@ -434,7 +438,7 @@ def cs_body():
     # Verificar si el usuario ha seleccionado una sección
     if seleccion != "Seleccione nota...":
         # Mostrar la nota correspondiente
-        st.subheader(f"Nota de {seleccion}")
+        st.subheader(f"{seleccion}")
         st.markdown(notas[seleccion])
 
     css = '''
