@@ -60,7 +60,7 @@ def cs_body():
     """
 
     # Cargar el archivo CSV
-    file_path = 'data/datos_estudiantes_desafio.csv'  # Ajusta la ruta si es necesario
+    file_path = 'desafio_analisis_estudiantes/data/datos_estudiantes_desafio.csv'  # Ajusta la ruta si es necesario
     df = pd.read_csv(file_path)
 
     # Título de la aplicación
