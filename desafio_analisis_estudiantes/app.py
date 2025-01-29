@@ -28,7 +28,7 @@ def cs_sidebar():
     st.sidebar.title("Análisis de Datos de Estudiantes")
 
     # Mostrar logo
-    logo_url = "images/student.svg"  # Ajusta la ruta de la imagen si es necesario
+    logo_url = "desafio_analisis_estudiantes/images/student.svg"  # Ajusta la ruta de la imagen si es necesario
     st.sidebar.image(logo_url, width=200)
 
     # Objetivos del análisis

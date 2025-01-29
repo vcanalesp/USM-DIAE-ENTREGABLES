@@ -4,7 +4,7 @@
 
 > **Nota:** Puede encontrar más detalles en:  
 > - 📓 **Notebook:** [code/main.ipynb](code/main.ipynb)  
-> - 🌐 **Streamlit:** [Estudiantes1 App](https://estudiantes1.streamlit.app/)  
+> - 🌐 **Streamlit:** [Estudiantes App](https://estudiantes.streamlit.app/)  
 
 
 
