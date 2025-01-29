@@ -1,6 +1,12 @@
 # Desafío 049H
 
-**Objetivo:** Analizar y procesar los datos de estudiantes para descubrir patrones, realizar transformaciones, y crear visualizaciones utilizando NumPy, Pandas, Sckit-Learn y Matplotlib.
+🎯 **Objetivo:** Analizar y procesar los datos de estudiantes para descubrir patrones, realizar transformaciones, y crear visualizaciones utilizando NumPy, Pandas, Sckit-Learn y Matplotlib.
+
+> **Nota:** Puede encontrar más detalles en:  
+> - 📓 **Notebook:** [code/main.ipynb](code/main.ipynb)  
+> - 🌐 **Streamlit:** [Estudiantes1 App](https://estudiantes1.streamlit.app/)  
+
+
 
 1. **Cargue el archivo datos_estudiantes_desafio.csv**
 * El archivo datos_estudiantes_desafio.csv contiene 20 mil registros:
@@ -46,7 +52,7 @@
 
 
 7. **Visualizaciones:**
-* Crear gráficos utilizando Matplotlib (https://matplotlib.org/stable/gallery/index.html).
+* Crear gráficos utilizando [Matplotlib](https://matplotlib.org/stable/gallery/index.html).
   * Distribución de calificaciones por asignatura.
   * Promedio de calificaciones por comuna (gráfico de barras).
 * Crear un gráfico de dispersión que relacione Horas_de_estudio y Nota_Matemáticas.
